@@ -1,12 +1,15 @@
 import React from "react";
-function App(){
-  return(
-    <div className='font-bold'>
-      <h1>
-        Welcome
-      </h1>
-    </div>
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Correct imports
+import Home from "../Pages/Home";
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App
+export default App;
