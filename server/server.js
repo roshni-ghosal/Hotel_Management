@@ -10,7 +10,8 @@ const app = express();
 app.use(express.json());
 
 //routes
-app.use("/hotel_management/user", userRoute)
+app.use(`${process.env.USER_ROUTE}`, userRoute);
+
 
 
 // server start
